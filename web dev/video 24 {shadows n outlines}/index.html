@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows</title>
+</head>
+<style>
+    /* shadows */
+    .box{
+        border: 1px solid black;
+        background-color: aquamarine;
+        padding: 33px;
+        /* box-shadow: h-offset(x cord.) v-offset(y cord.) blur spread color inset; */
+        /* better to inspect and customise by yourself and edit the values here */
+        box-shadow: 5px 5px 15px 5px #180202;
+        text-shadow: 3px 3px 4px #151313;
+    }
+    .container{
+        border: 2px solid green;
+        outline: 2px solid black;
+        /* understand the diff. bertween border and outline */
+        outline-offset: 3px;
+        background-color: rgb(255, 255, 255);
+        padding: 33px;
+        
+        text-shadow: 3px 3px 4px #151313;
+    }
+
+</style>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <br>
+    <div class="container">
+        
+        I am an another box
+    </div>
+</body>
+</html>

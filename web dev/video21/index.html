@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* cascade algoritham */
+
+        /* 1.Position and order of appearance: the order in which your CSS rules appear */
+
+        /* 2.Specificity: an algorithm that determines which CSS selector has the strongest match */
+          
+        /* basically, Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+
+        /* importance: some CSS rules are weighted more heavily than others, especially with the !important rule type */
+
+
+        /* .yellow{
+            color: yellow;
+        } */
+        
+        .para{
+            color: red;
+        }
+        .para{
+            color: rgb(104, 84, 123) !important;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+         /* h1{
+            color: aqua;
+        }  */
+    </style>
+</head>
+<body>
+    <p class="para">this is a paragraph</p>
+    <h1 style="color: rgb(181, 87, 222);" class="yellow cred cpurple">css specifecity</h1>
+</body>
+</html>
